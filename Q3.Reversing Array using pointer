@@ -1,0 +1,29 @@
+//Rachit Singh
+//A3
+//080
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[]={10,20,30,40,50};
+    
+    int *ptr = arr;
+    
+    cout<<"the pointer is : "<<endl;
+    for(int i=0;i<5;i++){
+        cout<<*(ptr+i)<<" ";
+    }
+    cout<<endl;
+    
+    cout<<"the reversed pointer is :"<<endl;
+    for(int i=4;i>=0;i--){
+        cout<<*(ptr+i)<<" ";
+    }
+      
+}
+
+OUTPUT:
+the pointer is : 
+10 20 30 40 50 
+the reversed pointer is :
+50 40 30 20 10 
