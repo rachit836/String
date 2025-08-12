@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a=10;
+    int *aptr;
+    aptr=&a;
+    
+    cout<<"address of a before increament :"<<aptr<<endl;
+    aptr++;
+    cout<<"address of a after increament :"<<aptr<<endl;
+    cout<<endl;
+    char b='c';
+    char *bptr=&b;
+    cout<<"address of b before increament :"<<(void*)bptr<<endl;;
+    bptr++;
+    cout<<"the address of b after increment :"<<(void*)bptr<<endl;
+   
+    cout<<endl;
+    float d=10.25;
+    float *eptr=&d;
+    cout<<"the address of d before increment :"<<eptr<<endl;
+    eptr++;
+    cout<<"the address of d after increamnet :"<<eptr<<endl;
+    
+   
+    cout<<endl;
+    string f="rachit";
+    string *hptr=&f;
+    cout<<"addres of f before increament :"<<hptr<<endl;
+    hptr++;
+    cout<<"address of f after increament :"<<hptr<<endl;
+    
+    
+}
+
+OUTPUT:
+
+address of a before increament :0x7fff773eeaa0
+address of a after increament :0x7fff773eeaa4
+
+address of b before increament :0x7fff773eea9f
+the address of b after increment :0x7fff773eeaa0
+
+the address of d before increment :0x7fff773eea98
+the address of d after increamnet :0x7fff773eea9c
+
+addres of f before increament :0x7fff773eea70
+address of f after increament :0x7fff773eea90
